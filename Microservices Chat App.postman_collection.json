@@ -32,6 +32,74 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7101/sessions/877732f9-576e-41b5-bd02-0923be8d14e1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"sessions",
+						"877732f9-576e-41b5-bd02-0923be8d14e1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"diego2\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7101/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7101/sessions/7ebf20c5-5805-45e8-8c63-c41544fee7a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7101",
+					"path": [
+						"sessions",
+						"7ebf20c5-5805-45e8-8c63-c41544fee7a9"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
